@@ -10,7 +10,7 @@ function send() {
 }
 
 function getUsers() {
-  fetch('http://localhost:3000/users')
+  fetch('https://test-repository-34ze.onrender.com/users')
     .then(req => req.json())
     .then(response => {
       document.getElementById('users').innerHTML = '';
