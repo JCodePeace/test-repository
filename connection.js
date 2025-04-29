@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const uri = "";
+const uri = process.env.MONGODB_URL;
 
 
 module.exports = async function getDb() {
