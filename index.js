@@ -1,6 +1,8 @@
 const express = require('express')
 const cors = require('cors')
 const bcrypt = require("bcrypt")
+const dotenv = require("dotenv")
+dotenv.config()
 
 const app = express()
 const port = 3000
@@ -57,4 +59,5 @@ app.listen(port, async () => {
   console.log(`Example app listening on port ${port}`)
   db = await getDb()
   console.log('Connected to database.')
+  console.log(process.env.TEST_ENV)
 })
