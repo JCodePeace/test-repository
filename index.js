@@ -1,8 +1,6 @@
 const express = require('express')
 const cors = require('cors')
 const bcrypt = require("bcrypt")
-const dotenv = require("dotenv")
-dotenv.config()
 
 const app = express()
 const port = 3000
